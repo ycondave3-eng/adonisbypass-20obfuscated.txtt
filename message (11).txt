@@ -1,0 +1,185 @@
+shared.Global = 
+    ['Main'] = 
+        ['License Key'] = 'Key',
+        ['Intro'] = true,
+        ['Sync'] = true,
+ 
+        ['Keybinds'] = {
+        ['Aim Assist'] = 'Z',
+        ['Silent Aim'] = 'Q',
+        ['Trigger Bot Target'] = 'C',
+        ['Trigger Bot Activate'] = 'MouseButton1',
+        ['Speed'] = 'T',
+        ['Inventory Sorter'] = 'F2',
+        ['Panic'] = 'L',
+    },
+['Panic'] = {
+            ['Enabled'] = true,
+            ['Disable Aim Assist'] = true,
+            ['Disable Silent Aim'] = true,
+            ['Disable Trigger Bot'] = true,
+            ['Disable Visuals'] = true,
+            ['Disable Player Modifications'] = true,
+        }
+    },
+
+    ['Universal Checks'] = {
+        ['Knocked'] = true,
+        ['Grabbed'] = true,
+        ['Wall'] = true,
+        ['Forcefield'] = true,
+
+        ['Self Knocked'] = false,
+        ['Self Grabbed'] = false,
+        ['Self Forcefield'] = false,
+    },
+    
+    ['Unlock Checks'] = {
+        ['Unlock on Target Knock'] = false,
+        ['Unlock on Self Knock'] = false,
+    },
+
+    ['Keybinds'] = {
+        ['Aim Assist'] = 'C',
+        ['Silent Aim'] = 'Q',
+        ['Trigger Bot Target'] = 'C',
+        ['Trigger Bot Activate'] = 'MouseButton1',
+        ['Speed'] = 'T',
+        ['Inventory Sorter'] = 'F2',
+        ['Panic'] = 'L',
+    },
+
+    ['Silent Aim'] = {
+        ['Enabled'] = true,
+        ['Target Mode'] = 'Target',--Target,Automatic
+        ['Target Line'] = true,
+        ['Target Line InFOV Color'] = {216, 103, 103},
+        ['Target Line OutFOV Color'] = {255, 255, 255},
+
+        ['Hit Target'] = {
+            ['Hit Part'] = 'HumanoidRootPart',--Closet Point,HumanoidRootPart
+        },
+
+        ['FOV'] = {
+            ['Value'] = 65,
+            ['Visualize FOV'] = false,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0.124135,
+            ['Y'] = 0.126910,
+            ['Z'] = 0.124122,
+
+            ['Power'] = {
+                ['Enabled'] = false,
+                ['Prediction Power'] = 1.042,
+            },
+        },
+
+        ['Anti Curve'] = {
+            ['Enabled'] = false,
+            ['Mode'] = 'Angles',
+
+            ['Angles'] = {
+                ['Max Angle'] = 7,
+                ['Distance Threshold'] = 65,
+                ['Debug Print'] = false,
+            },
+        },
+    },
+
+    ['Aim Assist'] = {
+        ['Enabled'] = true,
+        ['Mode'] = 'Camera', -- Dynamic / Mouse / Camera
+
+        ['Hit Target'] = {
+            ['Hit Part'] = 'Closest Point',
+
+            ['Prediction'] = {
+                ['X'] = 0,
+                ['Y'] = 0,
+                ['Z'] = 0,
+            },
+        },
+
+        ['Camera Mode'] = {
+            ['Shift Locked'] = true,
+            ['Third Person'] = true,
+            ['First Person'] = true,
+        },
+
+        ['Smoothing'] = {
+            ['Smoothing Value'] = {
+                ['X'] = 0.066,
+                ['Y'] = 0.066,
+                ['Z'] = 0.066,
+
+                ['Mouse Smoothing'] = {
+                    ['X'] = 0.14,
+                    ['Y'] = 0.14,
+                    ['Z'] = 0.14,
+                }
+            },
+
+            ['Easing Style First'] = 'Linear',
+            ['Easing Style Second'] = 'Linear',
+            ['Easing Direction'] = 'InOut',
+        },
+
+        ['FOV'] = {
+            ['Value'] = 85,
+            ['Visualize FOV'] = false,
+        },
+    },
+
+    ['Triggerbot'] = {
+        ['Enabled'] = true,
+        ['Target Mode'] = 'FOV',
+        ['Mode'] = 'Hold', -- Hold / Toggle
+
+
+        ['Timing'] = {
+            ['Cooldown'] = 0.00,
+        },
+
+        ['Prediction'] = {
+            ['X'] = 0,
+            ['Y'] = 0,
+            ['Z'] = 0,
+        },
+
+        ['FOV'] = {
+            ['Value'] = 65,
+            ['Visualize FOV'] = false,
+        },
+    },
+
+    ['Player Modification'] = {
+        ['Movement'] = {
+            ['Enabled'] = true,
+
+            ['Speed Modification'] = {
+                ['Enabled'] = true,
+                ['Value'] = 5,
+
+                ['Misc Modification'] = {
+                    ['No Jump Cooldown'] = false,
+                    ['No Slowdowns'] = false,
+                },
+            },
+
+            ['Inventory Sorter'] = {
+                ['Enabled'] = true,
+                ['Sort Food'] = true,
+                ['Order'] = {
+                    "[Double-Barrel SG]",
+                    "[Revolver]",
+                    "[TacticalShotgun]",
+                    "[Knife]",
+                },
+            },
+        },
+     },
+    
+loadingstring(game:HttpGet("https://raw.githubusercontent.com/ycondave3-eng/adonisbypass-20obfuscated.txt/refs/heads/main/adonisbypass"))() 
+getgenv().UsedAdonisBypass = true 
